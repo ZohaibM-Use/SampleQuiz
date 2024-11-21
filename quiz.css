@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+
+body{
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  color: #333;
+  font-weight: 300;
+  text-align: center;
+  background-color: #f8f6f0;
+}
+h1{
+  font-weight: 300;
+  margin: 0px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #444;
+  color: #fff;
+}
+.question {
+    font-size: 30px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid red;
+    padding: 10px;
+    border-radius: 30px;
+    background: #d9f1ff;
+  }
+  
+.answers {
+  margin-top: 20px;
+  text-align: left;
+  display: inline-block;
+  
+}
+.answers label{
+  display: block;
+  margin-bottom: 10px;
+}
+button{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 22px;
+  background-color: #279;
+  color: #fff;
+  border: 0px;
+  border-radius: 3px;
+  padding: 20px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+button:hover{
+  background-color: #38a;
+}
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}
+.quiz-container {
+    position: relative;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: #eef5f9; /* Light blue background for the quiz container */
+    border: 2px solid #ccc; /* Optional border for better contrast */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    padding: 20px; /* Adds spacing inside the container */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 50%;
+  }
+  
+.slide{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  .active-slide{
+    opacity: 1;
+    z-index: 2;
+  }
+  .quiz-container{
+    position: relative;
+    height: 200px;
+    margin-top: 40px;
+  }
+
+  .timer {
+    position: fixed; /* Ensures it stays at the same position on the screen */
+    top: 10px;       /* Distance from the top */
+    right: 10px;     /* Distance from the right */
+    background-color: #f8f9fa; /* Light background for better visibility */
+    color: #333;     /* Dark text color */
+    font-size: 24px; /* Font size for readability */
+    padding: 10px;   /* Space around the timer text */
+    border: 2px solid #333; /* Optional border for emphasis */
+    border-radius: 5px; /* Rounded corners */
+    z-index: 1000;   /* Ensures it appears above other elements */
+}
